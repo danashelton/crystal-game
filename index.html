@@ -1,45 +1,78 @@
 <html lang="en"><head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
     <title>Crystal Game</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container">
-    <div class="jumbotron">
+<div class="container">    
 
-        <header> 
-        <h1>Crystal Game</h1>
-        </header>
-
-
-        <div class="instructions">
-        <h3>Use the crystals to match the target number.</h3>
-        <div class="clearfix"><h1 class="display-1 float-right"><span class="border">--</h1></span>
+    <!-- Scoreboard -->
+    <div class="row float-right">
+        <div class="col-m-12">
+            <div class="scoreBoard">
+                <ul>
+                <li id="numberWins"></li>
+                <li></li>
+                <li>//</li>
+                <li></li>
+                <li id="numberLosses"></li>
+                </ul>
+            </div>
         </div>
+    </div>
 
-        <br>
-        <div class="score"><h2 class="float-left">
-        Your Score --</h2>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="crystals">
-        <img id="1" src="assets/images/crystal-1.png" class="rounded float-left" alt="crystal 1">
-        <img id="2" src="assets/images/crystal-2.png" class="rounded float-left" alt="crystal 2">
-        <img id="3" src="assets/images/crystal-3.png" class="rounded float-left" alt="crystal 3">
-        <img id="4" src="assets/images/crystal-4.png" class="rounded float-left" alt="crystal 4">
+<div class="jumbotron">
         
+
+    <!-- Target Number -->
+        <div class="row float-right">
+            <div class="col-md-12">
+                <h2 class="display-1"><span id="target"></h2>
+            </div>
+        </div>
+
+    <!-- Title, Instructions, User Score -->
+        <div class="row">
+            <div class="col-lg-12">
+                <header>
+                    <h1>Crystal Game</h1><br>
+                    <p id="instructions">Use the crystals to match the target number.</p>
+                    <div class="userScore"><h3 id="Combined">Your Score: </h3>
+                    </div>
+                </header>
+            </div>
         </div>
     </div>
+</div>
+
+    <!-- Crystals -->
+<div class="container">
+    <div class="row">
+        <div class="crystals">
+            <div class="col-md-3 col-sm-6">
+                <img class="img-fluid" id="one" src="assets/images/crystal-1.png" alt="crystal 1">
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <img class="img-fluid" id="two" src="assets/images/crystal-2.png" alt="crystal 2">
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <img class="img-fluid" id="three" src="assets/images/crystal-3.png" alt="crystal 3">
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <img class="img-fluid" id="four" src="assets/images/crystal-4.png" alt="crystal 4"> 
+            </div>
+        </div>
     </div>
-	<!--Javascript-->
-	<script type="text/javascript" src="assets/javascript/crystal-game.js" ></script>
+</div>
+
+
+<!--Javascript-->
+	<script type="text/javascript" src="assets/javascript/crystal.js" ></script>
 
 </body>
 </html>

@@ -1,25 +1,72 @@
 body,
 html {
-    height: 100%;
+    /* The image used */
+    background-image: linear-gradient(to bottom right, yellow, red);
+    background-image: url("../images/background.jpg");
+    /* Full height */
+    max-height: auto;
+    max-width: 100% !important;
+    /* Center and scale the image nicely */
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: solid 5px goldenrod;
     margin: 0;
     color: #ffffff;
 }
+
 .jumbotron {
     background-color: #e9ecef00;
 }
 
-h1, h2, h3 {
+/* .float-right.display-1 {
+    float: right;
+} */
+
+#target {
+    border: 1pt solid #ffffff;
+}
+
+header {
+    display: inline-block;
+}
+
+#instructions {
+    display: inline-block;
+    position: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+h1, h2, h3, p {
     color: white;
     text-shadow: 2px 2px 4px #000000;
 }
-.container {
-    /* The image used */
-    background-image: url("../images/background.jpg");
-    /* Full height */
-    height: 100%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: solid 5px goldenrod;
+
+p {
+    font-size: 1.25em;
 }
+
+.crystals {
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 740px) {
+    .row.float-right {
+        float: left !important;
+    }
+}
+        /* clear: both;
+        position: fixed;
+        display: block; */
+
+
