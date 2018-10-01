@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+# Crystal Game
+### CWRU Coding Bootcamp
 
-You can use the [editor on GitHub](https://github.com/danashelton/crystal-game/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+#### Live demo: https://danashelton.github.io/crystal-game
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Overview
+There will be four crystals displayed as buttons on the page.
+The player will be shown a random number at the start of the game.
 
-### Markdown
+When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Your game will hide this amount until the player clicks a crystal.
+When they do click one, update the player's score counter.
 
-```markdown
-Syntax highlighted code block
+The player wins if their total score matches the random number from the beginning of the game.
+The player loses if their score goes above the random number.
 
-# Header 1
-## Header 2
-### Header 3
+The game restarts whenever the player wins or loses.
 
-- Bulleted
-- List
+When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
 
-1. Numbered
-2. List
+The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+Scores and games are recorded in console.log
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/danashelton/crystal-game/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Technologies Used
+Javascript
+jQuery
+HTML
+CSS
+Adobe Illustrator
+Photoshop
+Bootstrap
